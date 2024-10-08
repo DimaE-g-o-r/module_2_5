@@ -5,7 +5,7 @@ def get_matrix(n,m,value):
         matrix.append(t)
         if i <= 0:
             continue
-        return matrix
+        return [matrix]
 
 result1 = get_matrix(2, 2, 10)
 result2 = get_matrix(3, 5, 42)
