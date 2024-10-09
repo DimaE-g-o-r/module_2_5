@@ -1,11 +1,13 @@
 def get_matrix(n,m,value):
     matrix = []
-    for i in range(n):
-        t = [value]*m
-        matrix.append(t)
-        if i <= 0:
-            continue
-        return [matrix]
+    if n <= 0:
+        return matrix
+    else:
+        for i in range(n):
+            t = [value]*m
+            matrix.append(t)
+
+        return matrix
 
 result1 = get_matrix(2, 2, 10)
 result2 = get_matrix(3, 5, 42)
